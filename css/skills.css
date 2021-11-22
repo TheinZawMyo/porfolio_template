@@ -1,0 +1,99 @@
+.color_container {
+	background-color: var(--primary-color);
+}
+
+.white_main_title {
+	color: #fff;
+	font-size: 2rem;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.color_container .card {
+    padding: 30px 10px 70px;
+	margin: 0px auto;
+}
+
+.language_list > * {
+	display: inline-block;
+}
+
+.language_list .lang_name {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.language_list .progress {
+	justify-content: flex-start;
+	border-radius: 100px;
+    box-shadow: 0 10px 40px -10px #000;
+	align-items: center;
+	position: relative;
+	padding: 0 1px;
+	display: flex;
+	height: 18px;
+}
+
+.progress_color {
+	animation: load 3s normal forwards;
+	box-shadow: 0 10px 40px -10px #fff;
+	border-radius: 100px;
+	background: var(--primary-color);
+	height: 20px;
+	width: 0;
+}
+
+.progress_value1 {
+    animation: load1 4s normal forwards;
+}
+.progress_value2 {
+    animation: load2 4s normal forwards;
+}
+.progress_value3 {
+    animation: load3 4s normal forwards;
+}
+.progress_value4 {
+    animation: load4 4s normal forwards;
+}
+
+.progress .percent {
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+@keyframes load1 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 75%;
+	}
+}
+@keyframes load2 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 65%;
+	}
+}
+@keyframes load3 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50%;
+	}
+}
+@keyframes load4 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 70%;
+	}
+}

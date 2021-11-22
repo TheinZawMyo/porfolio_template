@@ -1,0 +1,93 @@
+.exp_container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.exp_container > * {
+    flex: 50%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 787px){
+    .exp_container {
+        flex-direction: column;
+    }
+}
+
+.education, .experience, .projects {
+    position: relative;
+}
+
+.exp_container .card, .color_container .card {
+    background-color: var(--background-color);
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-bottom: 3px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.exp_container .card_icon {
+    position: absolute;
+    top: -30px;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    left: 20px;
+}
+
+.exp_container .card_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ===== hr line =====*/
+.hr_container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hr_text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: var(--primary-color);
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+
+.hr_text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr_text:after {
+    content: "</>";
+    position: relative;
+    display: inline-block;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+.main_title {
+    font-size: 2rem;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.title_line {
+    max-width: 300px;
+    margin: 0 auto;
+}

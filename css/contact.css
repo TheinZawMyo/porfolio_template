@@ -1,0 +1,51 @@
+.contact_container {
+    flex-direction: row;
+}
+
+.contact_container > * {
+    padding: 30px 10px;
+    flex: 50%;
+}
+
+@media screen and (max-width: 787px){
+    .contact_container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:787px){
+    .form_container {
+        padding: 30px 0px 30px 30px;
+    }
+}
+
+.label {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin: 20px 0px 10px;
+}
+
+.form_control{
+    border: 1px solid var(--primary-color);
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 15px;
+    width: 100%;
+}
+
+.form_control:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+.btn_secondary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.btn_secondary:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}

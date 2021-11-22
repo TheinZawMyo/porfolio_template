@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My Portfolio</title>
+	<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="nav_bar">
+			<div class="nav_logo">
+				<a href="" class="logo_link">TZM</a>
+			</div>
+
+			<div class="nav_menu" id="nav-menu">
+				<ul class="menu_list">
+					<li class="menu_item">
+						<a href="#home" class="menu_link">Home</a>
+					</li>
+					<li class="menu_item">
+						<a href="#experience" class="menu_link">Experience</a>
+					</li>
+					<li class="menu_item">
+						<a href="#skills" class="menu_link">Skills</a>
+					</li>
+					<li class="menu_item">
+						<a href="#contact" class="menu_link">Contact me</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="toggle_btn" id="nav-toggle">
+				<i class="bx bx-menu"></i>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container" id="home">
+		<div class="theme_container">
+			<label class="switch" title="Dark/Light Theme">
+				<input type="checkbox" id="theme_btn" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<div class="home_profile flex_container">
+			<div class="image_box">
+				<div class="profile_card">
+					<div class="layer_1">
+						<img src="img/images.jfif" alt="Profile" />
+					</div>
+					<div class="layer_2"></div>
+					<div class="layer_3"></div>
+				</div>
+			</div>
+			<div class="profile_name_box">
+				<div class="name">
+					I'm <span class="color_txt">Thein Zaw Myo.</span>
+					<div class="description">
+						I am a <span class="color_txt">web developer.</span>
+					</div>
+					<div class="btn_group">
+						<a href="#contact" class="btn btn_primary">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hr_container">
+		<hr class="hr_text" />
+	</div>
+	<section id="experience">
+		<div class="edu_container">
+			<h3 class="main_title"><span class="color_txt">Education</span> & <span class="color_txt">Experience</span>
+			</h3>
+			<div class="title_line">
+				<hr class="hr_text" />
+			</div>
+			<div class="container flex_container exp_container">
+				<div class="education scale">
+					<div class="card">
+						<div class="card_title">B.C.Sc (Computer Science)</div>
+						<div class="card_content">
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Voluptates perferendis impedit optio quaerat
+							nostrum animi enim, atque necessitatibus maxime
+							veritatis eius id veniam doloremque laudantium, vel,
+							at architecto explicabo inventore.
+						</div>
+					</div>
+					<span class="card_icon"><i class='bx bxs-graduation'></i></span>
+				</div>
+				<div class="experience scale">
+					<div class="card">
+						<div class="card_title">B.C.Sc (Computer Science)</div>
+						<div class="card_content">
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Voluptates perferendis impedit optio quaerat
+							nostrum animi enim, atque necessitatibus maxime
+							veritatis eius id veniam doloremque laudantium, vel,
+							at architecto explicabo inventore.
+						</div>
+					</div>
+					<span class="card_icon"><i class='bx bx-spreadsheet'></i></span>
+				</div>
+			</div>
+			<div class="container flex_container exp_container">
+				<div class="projects scale">
+					<div class="card">
+						<div class="card_title">Projects</div>
+						<div class="card_content">
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Voluptates perferendis impedit optio quaerat
+							nostrum animi enim, atque necessitatibus maxime
+							veritatis eius id veniam doloremque laudantium, vel,
+							at architecto explicabo inventore.
+						</div>
+					</div>
+					<span class="card_icon"><i class='bx bx-code'></i></i></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section For Skills -->
+	<section id="skills" class="color_container">
+		<h3 class="white_main_title">My Skills</span></h3>
+		<!-- <div class="title_line"><hr class="hr_text" /></div> -->
+		<div class="container card">
+			<div class="language_list">
+				<div class="lang_name">HTML</div>
+				<div class="progress">
+					<div class="progress_color progress_value1 scale"><span class="percent">75%</span></div>
+				</div>
+				<div class="lang_name">CSS</div>
+				<div class="progress">
+					<div class="progress_color progress_value2 scale"><span class="percent">65%</span></div>
+				</div>
+				<div class="lang_name">Javascript/React</div>
+				<div class="progress">
+					<div class="progress_color progress_value3 scale"><span class="percent">50%</span></div>
+				</div>
+				<div class="lang_name">PHP/Laravel</div>
+				<div class="progress">
+					<div class="progress_color progress_value4 scale"><span class="percent">70%</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h3 class="main_title"><span class="color_txt">Get In Touch!</span></h3>
+		<div class="container flex_container contact_container">
+			<div class="mail_img scale">
+				<img src="img/mail_send.svg" alt="mail_send_img">
+			</div>
+			<div class="mail_form ">
+				<form action="mailto:theinzawmyo40@gmail.com" enctype="text/plain" method="post">
+					<div class="form_container">
+						<div class="label">
+							<label for="name">Name</label>
+						</div>
+						<div class="input scale">
+							<input type="text" name="name" id="name" class="form_control" placeholder="Enter your name"
+								required>
+						</div>
+						<div class="label scale">
+							<label for="name">Email</label>
+						</div>
+						<div class="input scale">
+							<input type="email" name="email" id="email" class="form_control"
+								placeholder="Enter your email" required>
+						</div>
+						<div class="label">
+							<label for="name">Message</label>
+						</div>
+						<div class="input scale">
+							<textarea name="message" class="form_control" cols="30" rows="10"
+								placeholder="Enter your message"></textarea>
+						</div>
+						<div class="form_row scale">
+							<button type="submit" class="btn btn_secondary">Send <i class='bx bx-send'></i></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<button class="scroll_top_btn" id="scrollBtn"><i class='bx bx-up-arrow-circle'></i></button>
+	<footer>
+		<div class="color_container">
+			<div class="footer_txt">
+				&copy;<span id="year"></span> , All rights reserved.
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="script.js"></script>
+<script>
+	let year = new Date().getFullYear()
+	document.getElementById('year').innerHTML = year
+</script>
+
+</html>

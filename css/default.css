@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #ff6347;
+    --secondary-color: #ffee0a;
+    --background-color : #ffffff;
+    --text-color: #000000;
+    --gray-color: #cecdcd;
+}
+
+body.dark_theme {
+    --background-color : rgb(10, 10, 10);
+    --text-color: #fff;
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+ul {
+	list-style: none;
+}
+
+a {
+    color: var(--primary-color);
+	text-decoration: none;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex_container {
+    display: flex;
+}
+
+.grid_container {
+    display: grid;
+}
+
+
+section {
+    padding: 70px 10px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}
+
+.footer_txt {
+    padding: 30px;
+}
+
+
+.scroll_top_btn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    color: var(--primary-color);
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 30;
+    padding: 16px 16px 12px;
+    background-color: var(--background-color);
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-color);
+
+}
+
+.scroll_top_btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+@media screen and (max-width: 787px){
+    .scroll_top_btn {
+        right: 20px;
+        font-size: 15px;
+        padding: 10px 10px 6px;
+    }
+}
+
